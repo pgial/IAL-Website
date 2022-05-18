@@ -1,3 +1,14 @@
+.dark-bg-font {
+    color: white;
+}
+
+.bg-pattern{
+    background-color: #191c1b;
+    background-image: radial-gradient(circle, #01140a 15%, transparent 10%), radial-gradient(circle, #01140a 15%, transparent 10%);
+    background-size: 10px 10px;
+    background-position: 0 0, 50px 50px;
+  }
+
 .clean_cartoon_button {
     border: none;
     width: 100%;
