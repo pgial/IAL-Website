@@ -3,36 +3,90 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/timeline.css' %}" />
+    
 
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-        <a class="navbar-brand navbar-title" href="#">
-            <h3>Introdução à Algebra Linear</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <h5><a class="nav-link" href="#">Início</a></h3>
-                </li>
-                <li class="nav-item">
-                    <h5><a class="nav-link" href="#">Matérias</a></h5>
-                </li>
-            </ul>                
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h3>Introdução à Algebra Linear</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <h5><a class="nav-link" href="#">Início</a></h3>
+                    </li>
+                    <li class="nav-item">
+                        <h5><a class="nav-link" href="#">Matérias</a></h5>
+                    </li>
+                </ul>                
+            </div>
         </div>
     </nav>
-    <div class='container'>
-        
-        
-        
+    <div class="container">
+    		
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                  <h1>Timeline</h1>
+                </div>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-badge"><i class="glyphicon glyphicon-off"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Módulo 1</h4>
+                                <h5>MATRIZES, DETERMINANTES E SISTEMAS LINEARES</h5>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Mussum ipsum cacilds</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Módulo 2</h4>
+                                <h5>ESPAÇOS VETORIAIS E TRANSFORMAÇÕES LINEARES</h5>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Mussum ipsum cacilds</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros gostis.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Módulo 3</h4>
+                                <h5>AUTOVETORES E PRODUTO INTERNO</h5>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Mussum ipsum cacilds</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                                
+                            </div>
+                        </div>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
     </div>
 
 </body>
