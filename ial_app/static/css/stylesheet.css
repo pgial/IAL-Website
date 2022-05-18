@@ -55,3 +55,96 @@ background: var(--button_outline_color);
     /* Push the button downwards when pressed */
     transform: translateY(0);
 }
+
+.card-extra {
+    width: 300px;
+    background: #141a17;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.card-extra h2, .card-extra p {
+    max-width: 100%;
+    z-index: 1;
+    color: white;
+    font-size: 1.4em;
+}
+
+.card-extra p {
+    padding: 15px;
+    font-size: 1em;
+}
+
+.card-extra::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, #00c45d, #00ff79);
+    height: 200%;
+    animation: rotBGimg 20s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card-extra::after {
+    content: '';
+    position: absolute;
+    background: #141a17;
+    inset: 5px;
+    border-radius: 15px;
+}  
+
+
+.button-extra {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.button-extra::before {
+    content: '';
+    width: 0;
+    height: 600%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.button-extra:hover::before {
+    width: 100%;
+}
+
+.button-extra:hover {
+    color: #111;
+}
+
