@@ -154,6 +154,10 @@ background: var(--button_outline_color);
     background: #212121;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
                 -15px -15px 30px #191c1b;
-   }
-   
+}
+
+.pdf {
+    min-width:1000px !important;
+    min-height:500px !important;
+}
 
