@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    # 'less',
+    'embed_video',
     'ial_app',
     'django.contrib.admin',
     'django.contrib.auth',

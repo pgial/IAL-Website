@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load embed_video_tags %}
+{% load static %}
+{% load i18n %}
+
+{% block content%}
+<div class="row">
+    <div class="col-md-12 py-5 dark-bg-font">
+        <div class="card-modulo p-4">
+            <div class="card-header display-5 py-2">
+                Módulo 1 - MATRIZES, DETERMINANTES E SISTEMAS LINEARES
+            </div>
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">MATRIZES</button>
+                    <button class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">SISTEMAS LINEARES</button>
+                    <button class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">DETERMINANTES</button>
+                    <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">REGRA DE CRAMER</button>
+                </div>
+
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        {% video 'https://www.youtube.com/watch?v=1a1efAZ-Cm0' '640x480' %}
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                        <p>.sitsog mun ue silob siam ,silob ed atiecer ec aidup ossiuq ssitnasseretnI .mital icerap i sidan acifingis mun iuq sirvalap itnom ni neipaS .agap sion aid muiuq aterudnip amudnaM .oel siuq sisotsima e meuq arp em sitnemele ni ,oiemrev sore isin ,sizrarig mutnemele ziaf eM .sitnas sitiripse ,sihlif ,sisiaP .sidarap ,sirrop sitlovid sioped , al arP .sitile sgnicsipida sitesnoC .sitreba ortil sidiv ,sdlicac muspi mussuM</p>
+                        <p>.sitsog mun ue silob siam ,silob ed atiecer ec aidup ossiuq ssitnasseretnI .mital icerap i sidan acifingis mun iuq sirvalap itnom ni neipaS .agap sion aid muiuq aterudnip amudnaM .oel siuq sisotsima e meuq arp em sitnemele ni ,oiemrev sore isin ,sizrarig mutnemele ziaf eM .sitnas sitiripse ,sihlif ,sisiaP .sidarap ,sirrop sitlovid sioped , al arP .sitile sgnicsipida sitesnoC .sitreba ortil sidiv ,sdlicac muspi mussuM</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                        BBBBBBBBBBBB
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">...</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+{% endblock %}
