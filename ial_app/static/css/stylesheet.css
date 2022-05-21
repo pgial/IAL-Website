@@ -9,6 +9,12 @@
     background-position: 0 0, 50px 50px;
   }
 
+.exercise-list {
+    background-color: #1f1d1d;
+    border-radius: 15px;
+    
+}
+
 .clean_cartoon_button {
     border: none;
     width: 100%;
@@ -157,7 +163,62 @@ background: var(--button_outline_color);
 }
 
 .pdf {
-    min-width:1000px !important;
-    min-height:500px !important;
+    width: 100% !important;
+    max-width:1000px !important;
+    min-height:600px !important;
 }
 
+.module-text-muted {
+    color: #b9b9b9 !important;
+}
+
+.button-visualize-pdf {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #071401;
+    border: solid 2px #3fbd00;
+    font-family: inherit;
+   }
+   
+   .default-btn,.hover-btn {
+    background-color: #071401;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    border-radius: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s ease;
+   }
+   
+   .hover-btn {
+    position: absolute;
+    inset: 0;
+    background-color: #3fbd00;
+    transform: translate(0%,100%);
+   }
+   
+   .default-btn span {
+    color: hsl(0, 0%, 100%);
+   }
+   
+   .hover-btn span {
+     color: #000000 !important;
+   }
+   
+   .button-visualize-pdf:hover .default-btn {
+    transform: translate(0%,-100%);
+   }
+   
+   .button-visualize-pdf:hover .hover-btn {
+    transform: translate(0%,0%);
+   }
