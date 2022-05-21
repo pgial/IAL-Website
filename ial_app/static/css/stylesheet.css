@@ -1,5 +1,5 @@
 .dark-bg-font {
-    color: white;
+    color: white !important;
 }
 
 .bg-pattern {
@@ -170,6 +170,7 @@
 
 .module-text-muted {
     color: #b9b9b9 !important;
+    font-size: 0.8em;
 }
 
 .button-visualize-pdf {
