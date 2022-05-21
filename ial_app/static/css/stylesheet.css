@@ -2,17 +2,17 @@
     color: white;
 }
 
-.bg-pattern{
+.bg-pattern {
     background-color: #191c1b;
     background-image: radial-gradient(circle, #01140a 15%, transparent 10%), radial-gradient(circle, #01140a 15%, transparent 10%);
     background-size: 10px 10px;
     background-position: 0 0, 50px 50px;
-  }
+}
 
 .exercise-list {
     background-color: #1f1d1d;
     border-radius: 15px;
-    
+
 }
 
 .clean_cartoon_button {
@@ -36,7 +36,7 @@
     font-weight: bold;
     border: none;
     border-radius: var(--button_radius);
-background: var(--button_outline_color);
+    background: var(--button_outline_color);
 }
 
 .button_top {
@@ -114,7 +114,7 @@ background: var(--button_outline_color);
     background: #141a17;
     inset: 5px;
     border-radius: 15px;
-}  
+}
 
 
 .button-extra {
@@ -155,17 +155,17 @@ background: var(--button_outline_color);
 }
 
 .card-modulo {
-    
+
     border-radius: 30px;
     background: #212121;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
-                -15px -15px 30px #191c1b;
+        -15px -15px 30px #191c1b;
 }
 
 .pdf {
     width: 100% !important;
-    max-width:1000px !important;
-    min-height:600px !important;
+    max-width: 1000px !important;
+    min-height: 600px !important;
 }
 
 .module-text-muted {
@@ -179,11 +179,11 @@ background: var(--button_outline_color);
     cursor: pointer;
     border-radius: 3px;
     background-color: #071401;
-    border: solid 2px #3fbd00;
+    border: solid 2px #00c45d;
     font-family: inherit;
-   }
-   
-   .default-btn,.hover-btn {
+}
+
+.default-btn, .hover-btn {
     background-color: #071401;
     display: -webkit-box;
     display: -moz-box;
@@ -198,27 +198,88 @@ background: var(--button_outline_color);
     font-weight: 500;
     text-transform: uppercase;
     transition: all .3s ease;
-   }
-   
-   .hover-btn {
+}
+
+.hover-btn {
     position: absolute;
     inset: 0;
-    background-color: #3fbd00;
-    transform: translate(0%,100%);
-   }
-   
-   .default-btn span {
+    background-color: #00c45d;
+    transform: translate(0%, 100%);
+}
+
+.default-btn span {
     color: hsl(0, 0%, 100%);
-   }
-   
-   .hover-btn span {
-     color: #000000 !important;
-   }
-   
-   .button-visualize-pdf:hover .default-btn {
-    transform: translate(0%,-100%);
-   }
-   
-   .button-visualize-pdf:hover .hover-btn {
-    transform: translate(0%,0%);
-   }
+}
+
+.hover-btn span {
+    color: #000000 !important;
+}
+
+.button-visualize-pdf:hover .default-btn {
+    transform: translate(0%, -100%);
+}
+
+.button-visualize-pdf:hover .hover-btn {
+    transform: translate(0%, 0%);
+}
+
+.module-topics-menu-title {
+    font-weight: bold !important;
+    text-shadow: 2px 1px #0e0909 !important;
+}
+
+.module-list-button {
+    display: inline-block;
+    border-radius: 4px;
+    background: #272727;
+    border: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow:0px 0px 8px 2px #00c45d inset;
+}
+
+
+.module-list-button.active {
+    background: linear-gradient(90deg, rgba(0, 196, 93, 1) 25%, rgba(33, 33, 33, 1) 95%) !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    box-shadow:0px 0px 2px 1px #212121 inset;
+    
+}
+
+.module-list-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.module-list-button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.module-list-button:hover span {
+    padding-right: 15px;
+}
+
+.module-list-button:hover {
+    background: linear-gradient(90deg, rgba(0, 196, 93, 1) 50%, rgba(33, 33, 33, 1) 100%);
+    transition: 0.2s;
+}
+
+.module-list-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
