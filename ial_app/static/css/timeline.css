@@ -11,7 +11,7 @@
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: #bfd2bb;
+  background-color: #b3c2ac;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -28,7 +28,7 @@
   clear: both;
 }
 .timeline .timeline-item .timeline-badge {
-  color: #bfd2bb;
+  color: #b3c2ac;
   width: 54px;
   height: 54px;
   line-height: 52px;
@@ -39,7 +39,7 @@
   left: 50%;
   margin-left: -25px;
   background-color: #0c2407;
-  border: 3px solid #bfd2bb;
+  border: 3px solid #b3c2ac;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -73,7 +73,7 @@
   float: left;
   right: 16px;
   border: 1px solid rgb(0, 0, 0);
-  background: #e8ede6;
+  background: #b3c2ac;
   border-radius: 30px;
   padding: 20px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -85,8 +85,8 @@
   right: -16px;
   display: inline-block;
   border-top: 16px solid transparent;
-  border-left: 16px solid #e8ede6;
-  border-right: 0 solid #e8ede6;
+  border-left: 16px solid #b3c2ac;
+  border-right: 0 solid #b3c2ac;
   border-bottom: 16px solid transparent;
   content: " ";
 }
