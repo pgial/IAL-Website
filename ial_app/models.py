@@ -32,7 +32,7 @@ class Topic(models.Model):
     extra = models.BooleanField(default=False, verbose_name='Extra module topic')
 
     def __str__(self):
-        return 'Topic {}'.format(self.title)
+        return self.title
 
     class Meta:
         ordering = ['order']
@@ -49,7 +49,7 @@ class Lesson(models.Model):
     fk_topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
 
     def __str__(self):
-        return 'Lesson {}'.format(self.title)
+        return self.title
 
 
 class ExerciseList(models.Model):
@@ -64,4 +64,4 @@ class ExerciseList(models.Model):
     fk_topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
 
     def __str__(self):
-        return 'Exercise List {}'.format(self.title)
+        return self.title
