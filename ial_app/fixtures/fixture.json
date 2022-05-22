@@ -1,0 +1,42 @@
+[
+    {
+        "model": "ial_app.Module",
+        "pk": 1,
+        "fields": {
+            "title": "MATRIZES, DETERMINANTES E SISTEMAS LINEARES",
+            "description": "TBD",
+            "number": 1,
+            "extra": false
+        }
+    },
+    {
+        "model": "ial_app.Module",
+        "pk": 2,
+        "fields": {
+            "title": "ESPAÇOS VETORIAIS E TRANSFORMAÇÕES LINEARES",
+            "description": "TBD",
+            "number": 2,
+            "extra": false
+        }
+    },
+    {
+        "model": "ial_app.Module",
+        "pk": 3,
+        "fields": {
+            "title": "AUTOVETORES E PRODUTO INTERNO",
+            "description": "TBD",
+            "number": 3,
+            "extra": false
+        }
+    },
+    {
+        "model": "ial_app.Module",
+        "pk": 10,
+        "fields": {
+            "title": "Conteúdo Extra",
+            "description": "TBD",
+            "number": 10,
+            "extra": true
+        }
+    }
+]
