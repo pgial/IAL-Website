@@ -12,8 +12,11 @@ class Module(models.Model):
     extra = models.BooleanField(default=False)
 
     def __str__(self):
-        return 'Module {}'.format(self.title)
-    
+        if self.extra:
+            return self.title
+        else:
+            return '{} - {}'.format(str(self.number) ,self.title)
+
     class Meta:
         ordering = ['number']
 
@@ -23,7 +26,7 @@ class Topic(models.Model):
         Classe de Tópico que pertence a um módulo
     """
     title = models.CharField(max_length=100, null=False, blank=False)
-    fk_module = models.ForeignKey(Module, on_delete=models.CASCADE)
+    fk_module = models.ForeignKey(Module, on_delete=models.CASCADE, verbose_name="Module")
     order = models.IntegerField(default=0)
     extra = models.BooleanField(default=False)
 
