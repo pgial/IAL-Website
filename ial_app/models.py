@@ -1,3 +1,4 @@
+from tabnanny import verbose
 from django.db import models
 from embed_video.fields import EmbedVideoField
 
@@ -28,7 +29,7 @@ class Topic(models.Model):
     title = models.CharField(max_length=100, null=False, blank=False)
     fk_module = models.ForeignKey(Module, on_delete=models.CASCADE, verbose_name="Module")
     order = models.IntegerField(default=0)
-    extra = models.BooleanField(default=False)
+    extra = models.BooleanField(default=False, verbose_name='Extra module topic')
 
     def __str__(self):
         return 'Topic {}'.format(self.title)
