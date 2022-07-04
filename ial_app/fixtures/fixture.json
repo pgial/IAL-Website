@@ -38,5 +38,45 @@
             "number": 10,
             "extra": true
         }
+    },
+    {
+        "model": "ial_app.Topic",
+        "pk": 11,
+        "fields": {
+            "title": "Matriz matroza de matriz",
+            "fk_module": 1,
+            "order": 1,
+            "extra": false
+        }
+    },
+    {
+        "model": "ial_app.Topic",
+        "pk": 12,
+        "fields": {
+            "title": "Matrizes esparsas",
+            "fk_module": 1,
+            "order": 2,
+            "extra": false
+        }
+    },
+    {
+        "model": "ial_app.Lesson",
+        "pk": 13,
+        "fields": {
+            "title": "Aula sobre matriz",
+            "text": "Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis.Per aumento de cachacis, eu reclamis.Paisis, filhis, espiritis santis.Aenean aliquam molestie leo, vitae iaculis nisl.",
+            "video": "https://www.youtube.com/watch?v=ktr4wfXi9xg",
+            "fk_topic": 11
+        }
+    },
+    {
+        "model": "ial_app.Lesson",
+        "pk": 14,
+        "fields": {
+            "title": "Multiplicação de Matrizes",
+            "text": "Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis.Per aumento de cachacis, eu reclamis.Paisis, filhis, espiritis santis.Aenean aliquam molestie leo, vitae iaculis nisl.",
+            "video": "https://www.youtube.com/watch?v=KKCmjnU2y3o",
+            "fk_topic": 11
+        }
     }
 ]
