@@ -8,7 +8,7 @@
     <div class="row col-md-12 py-5 dark-bg-font">
         <div class="card-modulo p-4">
             <div class="card-header display-5 py-2">
-                Módulo 1 - MATRIZES, DETERMINANTES E SISTEMAS LINEARES
+                MÓDULO {{ module.number }}- {{ module.title }}
             </div>
             <div class="d-flex align-items-start">
                 
@@ -16,50 +16,38 @@
                     <div class="module-topics-menu-title text-center">
                         TÓPICOS
                     </div>
-                    <button class="module-list-button active" id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1"
-                        type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><span>MATRIZES</span></button>
-                    <button class="module-list-button" id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2"
-                        type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                        <span>SISTEMAS LINEARES</span></button>
-                    <button class="module-list-button" id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3"
-                        type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false"><span>DETERMINANTES</span></button>
-                    <button class="module-list-button" id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4"
-                        type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                        <span>REGRA DE CRAMER</span>
-                    </button>
+                    {% for topic in topics %}
+                        <button class="module-list-button {{topic.status}}" id="v-pills-{{topic.item.id}}-tab" data-bs-toggle="pill" data-bs-target="#v-pills-{{topic.item.id}}"
+                        type="button" role="tab" aria-controls="v-pills-{{topic.item.id}}" aria-selected="true"><span>{{ topic.item.title }}</span></button>    
+                    {% endfor %}
                 </div>
 
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
-                        aria-labelledby="v-pills-1-tab">
+                    {% for topic in topics %}
+                    <div class="tab-pane fade show active" id="v-pills-{{topic.item.id}}" role="tabpanel"
+                        aria-labelledby="v-pills-{{topic.item.id}}-tab">
                         <div>
                             <h3>Sumário</h3>
                             <ul>
                                 <li><a href="#aulas">Aulas</a></li>
+                                {% for lesson in topic.lessons %}
                                     <ul>
-                                        <li>Introdução à matriz</li>
-                                        <li>Multiplicação de Matrizes</li>
+                                        <li>{{ lesson.title }}</li>
                                     </ul>
+                                {% endfor %}
                                 <li><a href="#exercises">Listas de Exercício</a></li>
                             </ul>
     
                         </div>
                         <h3 id="aulas">Aulas</h3>
                         <div class="lesson">
-                            <h5>Introdução à matriz</h5>
-                            <p class="module-text-muted">Publicado em 10/04/2022</p>
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                                eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia
-                                nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss
-                                quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois
-                                divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi
-                                eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia
-                                nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss
-                                quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                            {% video 'https://www.youtube.com/watch?v=1a1efAZ-Cm0' '640x480' %}
+                            {% for lesson in topic.lessons %}
+                                <h4 class="py-1 my-3">{{ lesson.title }}</h4>
+                                <p class="module-text-muted">Publicado em {{lesson.created_at}}</p>
+                                <p>{{ lesson.text }}</p>
+                                {% video lesson.video "640x480" %}
+                                <hr class="col-12">
+                            {% endfor %}
                         </div>
                         <h2 id="exercises" class="text-center my-5">Listas de exercícios</h2>
                             <p class="lead">Listas de exercícios que foram publicadas para estudo de Determinantes</p>
@@ -152,6 +140,7 @@
                         </div>
                         
                     </div>
+                    {% endfor %}
 
                 </div>
             
@@ -174,4 +163,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+
 {% endblock %}
