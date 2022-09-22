@@ -2,101 +2,183 @@
 {% load static %}
 {% load i18n %}
 
-{% block content%}
-<div class="row">
-    <div class="col-md-12">
-        <div class="my-3 py-3 w-100 text-center">
-            <h2 class="display-5 dark-bg-font">Linha do tempo</h1>
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="my-3 py-3 w-100 text-center">
+                <h2 class="display-5 dark-bg-font">Linha do tempo</h1>
+            </div>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-badge"><i
+                            class="glyphicon glyphicon-off"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Módulo 1</h4>
+                            <h5>MATRIZES, DETERMINANTES E SISTEMAS
+                                LINEARES</h5>
+                            <p><small class="text-muted"><i
+                                    class="glyphicon glyphicon-time"></i>Mussum
+                                ipsum cacilds</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis.
+                                Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Mé faiz elementum girarzis,
+                                nisi eros vermeio, in elementis mé pra quem é
+                                amistosis quis leo. Manduma pindureta quium dia
+                                nois paga. Sapien in monti palavris qui num
+                                significa nadis i pareci latim. Interessantiss
+                                quisso pudia ce receita de bolis, mais bolis eu
+                                num gostis.</p>
+                            <p class='button_cartoon'>
+                                <span class="button_top">
+                                    <button class='clean_cartoon_button'
+                                            onclick="window.location.href='modulo/1'">
+                                        Acessar material
+                                    </button>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-badge"><i
+                            class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Módulo 2</h4>
+                            <h5>ESPAÇOS VETORIAIS E TRANSFORMAÇÕES
+                                LINEARES</h5>
+                            <p><small class="text-muted"><i
+                                    class="glyphicon glyphicon-time"></i>Mussum
+                                ipsum cacilds</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis.
+                                Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Mé faiz elementum girarzis,
+                                nisi eros gostis.</p>
+                            <p class='button_cartoon'>
+                                <span class="button_top">
+                                    <button class='clean_cartoon_button'
+                                            onclick="window.location.href='modulo/2'">
+                                        Acessar material
+                                    </button>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-badge"><i
+                            class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Módulo 3</h4>
+                            <h5>AUTOVETORES E PRODUTO INTERNO</h5>
+                            <p><small class="text-muted"><i
+                                    class="glyphicon glyphicon-time"></i>Mussum
+                                ipsum cacilds</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis.
+                                Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Mé faiz elementum girarzis,
+                                nisi eros vermeio, in elementis mé pra quem é
+                                amistosis quis leo. Manduma pindureta quium dia
+                                nois paga. Sapien in monti palavris qui num
+                                significa nadis i pareci latim. Interessantiss
+                                quisso pudia ce receita de bolis, mais bolis eu
+                                num gostis.</p>
+                            <p>Mussum ipsum cacilds, vidis litro abertis.
+                                Consetis adipiscings elitis. Pra lá , depois
+                                divoltis porris, paradis. Paisis, filhis,
+                                espiritis santis. Mé faiz elementum girarzis,
+                                nisi eros vermeio, in elementis mé pra quem é
+                                amistosis quis leo. Manduma pindureta quium dia
+                                nois paga. Sapien in monti palavris qui num
+                                significa nadis i pareci latim. Interessantiss
+                                quisso pudia ce receita de bolis, mais bolis eu
+                                num gostis.</p>
+                            <p class='button_cartoon'>
+                            <span class="button_top">
+                                <button class='clean_cartoon_button'
+                                        onclick="window.location.href='modulo/3'">
+                                    Acessar material
+                                </button>
+
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <ul class="timeline">
-            <li class="timeline-item">
-                <div class="timeline-badge"><i class="glyphicon glyphicon-off"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Módulo 1</h4>
-                        <h5>MATRIZES, DETERMINANTES E SISTEMAS LINEARES</h5>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Mussum ipsum cacilds</small></p>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class='button_cartoon'>
-                            <span class="button_top"><button class='clean_cartoon_button'>Acessar material</button></span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Módulo 2</h4>
-                        <h5>ESPAÇOS VETORIAIS E TRANSFORMAÇÕES LINEARES</h5>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Mussum ipsum cacilds</small></p>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros gostis.</p>
-                        <p class='button_cartoon'>
-                            <span class="button_top"><button class='clean_cartoon_button'>Acessar material</button></span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Módulo 3</h4>
-                        <h5>AUTOVETORES E PRODUTO INTERNO</h5>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Mussum ipsum cacilds</small></p>
-                    </div>
-                    <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class='button_cartoon'>
-                            <span class="button_top"><button class='clean_cartoon_button'>Acessar material</button></span>
-                        </p>    
-                    </div>
-                </div>
-            </li>                    
-        </ul>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="alert alert-success text-center" role="alert">
-            <h4 class="alert-heading">Conteúdo Extra!</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-success text-center" role="alert">
+                <h4 class="alert-heading">Conteúdo Extra!</h4>
+            </div>
         </div>
-    </div>
-    <div class="col-md-12">
-        <div class="row justify-content-center align-items-center">
-            <div class="row col-md-4 p-3">
-                <div class="col card-extra">
-                    <h2 class="text-center">Curso de MATLAB</h2>
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    <button class="button-extra">ACESSAR CONTEÚDO</button>
+        <div class="col-md-12">
+            <div class="row justify-content-center align-items-center">
+                <div class="row col-md-4 p-3">
+                    <div class="col card-extra">
+                        <h2 class="text-center">Curso de MATLAB</h2>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis
+                            adipiscings elitis. Pra lá , depois divoltis
+                            porris, paradis. Paisis, filhis, espiritis santis.
+                            Mé faiz elementum girarzis, nisi eros vermeio, in
+                            elementis mé pra quem é amistosis quis leo. Manduma
+                            pindureta quium dia nois paga. Sapien in monti
+                            palavris qui num significa nadis i pareci latim.
+                            Interessantiss quisso pudia ce receita de bolis,
+                            mais bolis eu num gostis.</p>
+                        <button class="button-extra">ACESSAR CONTEÚDO</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row col-md-4 p-3">
-                <div class="col card-extra">
-                    <h2 class="text-center">Curso de SCILAB</h2>
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    <button class="button-extra">ACESSAR CONTEÚDO</button>
+                <div class="row col-md-4 p-3">
+                    <div class="col card-extra">
+                        <h2 class="text-center">Curso de SCILAB</h2>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis
+                            adipiscings elitis. Pra lá , depois divoltis
+                            porris, paradis. Paisis, filhis, espiritis santis.
+                            Mé faiz elementum girarzis, nisi eros vermeio, in
+                            elementis mé pra quem é amistosis quis leo. Manduma
+                            pindureta quium dia nois paga. Sapien in monti
+                            palavris qui num significa nadis i pareci latim.
+                            Interessantiss quisso pudia ce receita de bolis,
+                            mais bolis eu num gostis.</p>
+                        <button class="button-extra">ACESSAR CONTEÚDO</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row col-md-4 p-3">
-                <div class="col card-extra">
-                    <h2 class="text-center">Aplicações em Engenharia</h2>
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    <button class="button-extra">ACESSAR CONTEÚDO</button>
+                <div class="row col-md-4 p-3">
+                    <div class="col card-extra">
+                        <h2 class="text-center">Aplicações em Engenharia</h2>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis
+                            adipiscings elitis. Pra lá , depois divoltis
+                            porris, paradis. Paisis, filhis, espiritis santis.
+                            Mé faiz elementum girarzis, nisi eros vermeio, in
+                            elementis mé pra quem é amistosis quis leo. Manduma
+                            pindureta quium dia nois paga. Sapien in monti
+                            palavris qui num significa nadis i pareci latim.
+                            Interessantiss quisso pudia ce receita de bolis,
+                            mais bolis eu num gostis.</p>
+                        <button class="button-extra">ACESSAR CONTEÚDO</button>
+                    </div>
                 </div>
+
+
             </div>
-            
-            
+
         </div>
 
+
     </div>
-
-
-</div>
 
 {% endblock %}
