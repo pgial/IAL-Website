@@ -45,7 +45,6 @@ class Lesson(models.Model):
     text = models.TextField(max_length=5000, blank=True, null=True)
     video = EmbedVideoField()
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now_add=True)
     fk_topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -60,7 +59,6 @@ class ExerciseList(models.Model):
     description = models.TextField(max_length=2000, blank=True, null=True)
     pdf = models.FileField(upload_to='exercise_lists/', null=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now_add=True)
     fk_topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
 
     def __str__(self):

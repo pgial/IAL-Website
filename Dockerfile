@@ -7,3 +7,6 @@ COPY requirements.txt /src/
 RUN pip install -r requirements.txt
 COPY . /src/
 
+RUN python manage.py migrate
+
+RUN python manage.py loaddata ial_app/fixtures/*

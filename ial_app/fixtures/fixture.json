@@ -66,7 +66,8 @@
             "title": "Aula sobre matriz",
             "text": "Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis.Per aumento de cachacis, eu reclamis.Paisis, filhis, espiritis santis.Aenean aliquam molestie leo, vitae iaculis nisl.",
             "video": "https://www.youtube.com/watch?v=ktr4wfXi9xg",
-            "fk_topic": 11
+            "fk_topic": 11,
+            "created_at": "2020-01-01"
         }
     },
     {
@@ -76,7 +77,8 @@
             "title": "Multiplicação de Matrizes",
             "text": "Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis.Per aumento de cachacis, eu reclamis.Paisis, filhis, espiritis santis.Aenean aliquam molestie leo, vitae iaculis nisl.",
             "video": "https://www.youtube.com/watch?v=KKCmjnU2y3o",
-            "fk_topic": 11
+            "fk_topic": 11,
+            "created_at": "2020-01-01"
         }
     }
 ]
