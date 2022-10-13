@@ -12,55 +12,8 @@
 .exercise-list {
     background-color: #1f1d1d;
     border-radius: 15px;
-
 }
 
-.clean_cartoon_button {
-    border: none;
-    width: 100%;
-    height: 100%;
-    max-height: 30px;
-    background-color: #94d8b4;
-}
-
-.clean_cartoon_button:hover {
-    background-color: transparent;
-}
-
-.button_cartoon {
-    /* Variables */
-    --button_radius: 0.75em;
-    --button_color: #94d8b4;
-    --button_outline_color: #00c45d;
-    font-size: 17px;
-    font-weight: bold;
-    border: none;
-    border-radius: var(--button_radius);
-    background: var(--button_outline_color);
-}
-
-.button_top {
-    text-align: center;
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid var(--button_outline_color);
-    border-radius: var(--button_radius);
-    padding: 0.75em 1.5em;
-    background: var(--button_color);
-    color: var(--button_outline_color);
-    transform: translateY(-0.2em);
-    transition: transform 0.1s ease;
-}
-
-.button_cartoon:hover .button_top {
-    /* Pull the button upwards when hovered */
-    transform: translateY(-0.33em);
-}
-
-.button_cartoon:active .button_top {
-    /* Push the button downwards when pressed */
-    transform: translateY(0);
-}
 
 .card-extra {
     width: 300px;
@@ -155,7 +108,6 @@
 }
 
 .card-modulo {
-
     border-radius: 30px;
     background: #212121;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
