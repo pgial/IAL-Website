@@ -116,8 +116,7 @@
 
 .pdf {
     width: 100% !important;
-    max-width: 1000px !important;
-    min-height: 600px !important;
+    min-height: clamp(100px, 50vh, 600px) !important;
 }
 
 .module-text-muted {
