@@ -10,9 +10,9 @@
             <div class="card-header display-5 py-2">
                 MÓDULO {{ module.number }}- {{ module.title }}
             </div>
-            <div class="d-flex align-items-start">
+            <div class="row">
                 
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="col-12 col-lg-3 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <div class="module-topics-menu-title text-center">
                         TÓPICOS
                     </div>
@@ -22,7 +22,7 @@
                     {% endfor %}
                 </div>
 
-                <div class="tab-content" id="v-pills-tabContent">
+                <div class="col-12 col-lg-9 tab-content" id="v-pills-tabContent">
                     {% for topic in topics %}
                     <div class="tab-pane fade show active" id="v-pills-{{topic.item.id}}" role="tabpanel"
                         aria-labelledby="v-pills-{{topic.item.id}}-tab">
@@ -45,7 +45,9 @@
                                 <h4 class="py-1 my-3">{{ lesson.title }}</h4>
                                 <p class="module-text-muted">Publicado em {{lesson.created_at}}</p>
                                 <p>{{ lesson.text }}</p>
-                                {% video lesson.video "640x480" %}
+                                <div class="video">
+                                    {% video lesson.video %}
+                                </sdiv>
                                 <hr class="col-12">
                             {% endfor %}
                         </div>

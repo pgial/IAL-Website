@@ -252,5 +252,10 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
+}
 
+
+.video iframe{
+    max-width: clamp(100px,100%,640px);
+    max-height: clam(100px,100%,480px);
 }
