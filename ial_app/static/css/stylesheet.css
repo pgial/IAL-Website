@@ -116,8 +116,7 @@
 
 .pdf {
     width: 100% !important;
-    max-width: 1000px !important;
-    min-height: 600px !important;
+    min-height: clamp(100px, 50vh, 600px) !important;
 }
 
 .module-text-muted {
@@ -252,5 +251,10 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
+}
 
+
+.video iframe{
+    max-width: clamp(100px,100%,640px);
+    max-height: clam(100px,100%,480px);
 }
