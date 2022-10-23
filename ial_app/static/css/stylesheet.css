@@ -1,3 +1,27 @@
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+
+    .container {
+      max-width: clamp(300px, 90vw, 752px);
+      margin: 0px;
+      width: 100vw;
+    }
+
+    .card-modulo {
+        min-width: 100vw;
+    }
+
+}
+
+.card-modulo {
+    border-radius: 30px;
+    background: #1f1d1d;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px #191c1b;
+
+}
+
+
 .dark-bg-font {
     color: white !important;
 }
@@ -10,7 +34,7 @@
 }
 
 .exercise-list {
-    background-color: #1f1d1d;
+    background-color: #212121;;
     border-radius: 15px;
 }
 
@@ -107,13 +131,6 @@
     color: #111;
 }
 
-.card-modulo {
-    border-radius: 30px;
-    background: #212121;
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-        -15px -15px 30px #191c1b;
-}
-
 .pdf {
     width: 100% !important;
     min-height: clamp(100px, 50vh, 600px) !important;
@@ -188,12 +205,18 @@
     }
 }
 
-
+@media screen and (max-width: 991px){
+    .module-menu {
+        border-image: linear-gradient(90deg, rgba(25,28,27,0) 2%, rgba(0,196,93,0.3743872549019608) 50%, rgba(25,28,27,0)) 4 round;
+        border-bottom: 4px solid !important;
+        margin: 0em;
+    }
+}
 
 .module-list-button {
     background: #272727;
     border-radius: 4px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     padding: 16px;
     cursor: pointer;
     flex-basis: 1;
@@ -218,13 +241,15 @@
     100% {box-shadow:0px 0px 12px 2px #00c45c96 inset}
 }
 
-
+.module-list-button:hover {
+    background: #00c45c96;
+}
 
 @media screen and (min-width: 991px){
     .module-list-button {
         display: inline-block;
         font-size: 1em;
-        width: 200px;
+        
     }
 }
 
@@ -244,11 +269,9 @@
 }
 
 .module-list-button span:after {
-    content: '»';
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -15px;
     transition: 0.5s;
 }
 

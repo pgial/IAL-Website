@@ -12,7 +12,7 @@
             </div>
             <div class="row">
                 
-                <div class="col-12 col-lg-3 nav flex-lg-column flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="module-menu col-12 col-lg-2 nav flex-lg-column flex-row nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <div class="module-topics-menu-title text-center">
                         TÓPICOS
                     </div>
@@ -22,7 +22,7 @@
                     {% endfor %}
                 </div>
 
-                <div class="col-12 col-lg-9 tab-content" id="v-pills-tabContent">
+                <div class="col-12 col-lg-10 tab-content" id="v-pills-tabContent">
                     {% for topic in topics %}
                     <div class="tab-pane fade show active" id="v-pills-{{topic.item.id}}" role="tabpanel"
                         aria-labelledby="v-pills-{{topic.item.id}}-tab">
