@@ -304,9 +304,8 @@
 @media screen and (min-width: 0px) and (max-width: 767px){
 
     .container {
-      max-width: clamp(300px, 90vw, 752px);
-      margin: 0px;
-      width: 100vw;
+        margin: 0px;
+        min-width: 100vw;
     }
 
     .card-modulo {
@@ -317,4 +316,22 @@
         font-size: 1em;
     }
 
+}
+
+.welcome-card {
+    min-height: 30vh;
+    background: linear-gradient(
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.5)), 
+        url( "../img/fga_1.jpeg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 75%;
+    background-color: #000000;
+    
+}
+
+.welcome-card * {
+    color: white;
 }

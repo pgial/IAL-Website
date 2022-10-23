@@ -15,6 +15,9 @@
     position: relative;
     margin-bottom: 5vh;
     max-height: fit-content;
+    margin-right: none;
+    left: clamp(5px ,5vw, 20px);
+    
   }
 
   .timeline-heading {
