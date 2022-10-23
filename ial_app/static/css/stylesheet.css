@@ -178,25 +178,55 @@
 .module-topics-menu-title {
     font-weight: bold !important;
     text-shadow: 2px 1px #0e0909 !important;
+    flex-grow: 1;
+    width: 100%;
 }
+
+@media screen and (min-width: 991px){
+    .module-topics-menu-title {
+        flex-grow: 0;
+    }
+}
+
+
 
 .module-list-button {
-    display: inline-block;
-    border-radius: 4px;
     background: #272727;
+    border-radius: 4px;
+    font-size: 1.2em;
+    padding: 16px;
+    cursor: pointer;
+    flex-basis: 1;
+    display: flex;
+    min-width: 33%;
+    margin: 1em;
+    box-shadow:0px 0px 8px 2px #00c45c3d inset;
     border: none;
-    box-sizing: border-box;
     color: #FFFFFF;
     text-align: center;
-    font-size: 17px;
-    padding: 16px;
-    width: 200px;
+    box-sizing: border-box;
     transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    box-shadow:0px 0px 8px 2px #00c45d inset;
+    animation-name: topic-button-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
+@keyframes topic-button-anim {
+    0%   {box-shadow:0px 0px 8px 2px #00c45c3d inset}
+    100% {box-shadow:0px 0px 12px 2px #00c45c96 inset}
+}
+
+
+
+@media screen and (min-width: 991px){
+    .module-list-button {
+        display: inline-block;
+        font-size: 1em;
+        width: 200px;
+    }
+}
 
 .module-list-button.active {
     background: linear-gradient(90deg, rgba(0, 196, 93, 1) 25%, rgba(33, 33, 33, 1) 95%) !important;
