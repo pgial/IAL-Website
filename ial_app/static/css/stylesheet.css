@@ -1,16 +1,5 @@
-
-@media screen and (min-width: 0px) and (max-width: 767px){
-
-    .container {
-      max-width: clamp(300px, 90vw, 752px);
-      margin: 0px;
-      width: 100vw;
-    }
-
-    .card-modulo {
-        min-width: 100vw;
-    }
-
+.card-header {
+    font-size: 2em;
 }
 
 .card-modulo {
@@ -310,4 +299,22 @@
 .video iframe{
     max-width: clamp(100px,100%,640px);
     max-height: clam(100px,100%,480px);
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+
+    .container {
+      max-width: clamp(300px, 90vw, 752px);
+      margin: 0px;
+      width: 100vw;
+    }
+
+    .card-modulo {
+        min-width: 100vw;
+    }
+
+    .card-header {
+        font-size: 1em;
+    }
+
 }
