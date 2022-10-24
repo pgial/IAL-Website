@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+
 .card-header {
     font-size: 2em;
 }
@@ -10,10 +13,27 @@
 
 }
 
-
 .dark-bg-font {
     color: white !important;
 }
+
+.dark-bg-font::after {
+    color: white !important;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.5em;
+}
+
+footer {
+    font-family: 'Abel', sans-serif !important;
+    letter-spacing: 0.1em !important;
+}
+
+nav button{
+    letter-spacing: 0.3rem !important;
+    text-align: center;
+    align-items: center;
+}
+
 
 .bg-pattern {
     background-color: #191c1b;
@@ -204,7 +224,7 @@
 
 .module-list-button {
     background: #272727;
-    border-radius: 4px;
+    border-radius: 500px;
     font-size: 0.8em;
     padding: 16px;
     cursor: pointer;
@@ -230,9 +250,6 @@
     100% {box-shadow:0px 0px 12px 2px #00c45c96 inset}
 }
 
-.module-list-button:hover {
-    background: #00c45c96;
-}
 
 @media screen and (min-width: 991px){
     .module-list-button {
@@ -265,7 +282,7 @@
 }
 
 .module-list-button:hover span {
-    padding-right: 15px;
+    padding: 1px;
 }
 
 .module-list-button:hover {
@@ -304,9 +321,8 @@
 @media screen and (min-width: 0px) and (max-width: 767px){
 
     .container {
-      max-width: clamp(300px, 90vw, 752px);
-      margin: 0px;
-      width: 100vw;
+        margin: 0px;
+        min-width: 100vw;
     }
 
     .card-modulo {
@@ -317,4 +333,27 @@
         font-size: 1em;
     }
 
+}
+
+.welcome-card {
+    min-height: 30vh;
+    background: linear-gradient(
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.5)), 
+        url( "../img/fga_1.jpeg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 75%;
+    background-color: #000000;
+    color: white;
+}
+
+.welcome-card h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.5em;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
 }
