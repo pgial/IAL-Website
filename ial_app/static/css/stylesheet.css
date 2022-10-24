@@ -13,14 +13,17 @@
 
 }
 
-
 .dark-bg-font {
+    color: white !important;
+}
+
+.dark-bg-font::after {
     color: white !important;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 0.5em;
 }
 
-footer *{
+footer {
     font-family: 'Abel', sans-serif !important;
     letter-spacing: 0.1em !important;
 }
