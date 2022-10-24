@@ -18,7 +18,7 @@
                     </div>
                     {% for topic in topics %}
                         <button class="module-list-button {{topic.status}}" id="v-pills-{{topic.item.id}}-tab" data-bs-toggle="pill" data-bs-target="#v-pills-{{topic.item.id}}"
-                        type="button" role="tab" aria-controls="v-pills-{{topic.item.id}}" aria-selected="true"><span>{{ topic.item.title }}</span></button>    
+                        type="button" role="tab" aria-controls="v-pills-{{topic.item.id}}" aria-selected="true">{{ topic.item.title }}</button>    
                     {% endfor %}
                 </div>
 

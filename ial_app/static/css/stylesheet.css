@@ -224,7 +224,7 @@ nav button{
 
 .module-list-button {
     background: #272727;
-    border-radius: 4px;
+    border-radius: 500px;
     font-size: 0.8em;
     padding: 16px;
     cursor: pointer;
@@ -250,9 +250,6 @@ nav button{
     100% {box-shadow:0px 0px 12px 2px #00c45c96 inset}
 }
 
-.module-list-button:hover {
-    background: #00c45c96;
-}
 
 @media screen and (min-width: 991px){
     .module-list-button {
@@ -285,7 +282,7 @@ nav button{
 }
 
 .module-list-button:hover span {
-    padding-right: 15px;
+    padding: 1px;
 }
 
 .module-list-button:hover {
