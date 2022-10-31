@@ -356,4 +356,6 @@ nav button{
 
 p {
     font-family: 'Abel', sans-serif;
+    letter-spacing: 0.08em;
+    font-size-adjust: 1.2em;
 }
