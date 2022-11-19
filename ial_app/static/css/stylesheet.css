@@ -337,15 +337,7 @@ nav button{
 
 .welcome-card {
     min-height: 30vh;
-    background: linear-gradient(
-        rgba(0,0,0,.9),
-        rgba(0,0,0,.5)), 
-        url( "../img/fga_1.jpeg");
     max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 75%;
-    background-color: #000000;
     color: white;
 }
 
@@ -354,8 +346,50 @@ nav button{
     letter-spacing: 0.5em;
 }
 
+.fga-inside-image {
+    background: linear-gradient(
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.5)), 
+        url( "../img/fga_2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 75%;
+    background-color: #000000;
+}
+
+.fga-outside-image {
+    background: linear-gradient(
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.5)), 
+        url( "../img/fga_1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 75%;
+    background-color: #000000;   
+}
+
 p {
     font-family: 'Abel', sans-serif;
     letter-spacing: 0.08em;
     font-size-adjust: 1.2em;
+}
+
+.about-card {
+    background-color: #36363625;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.about-card p {
+    line-height: 1.8em;
+    padding-top: 1em;
+}
+
+
+
+.badge-item{
+    /* color:red !important; */
+    /* background-color: white;
+    padding: 10px;
+    border-radius: 50%; */
+    /* min-width: fit-content; */
 }
