@@ -315,7 +315,7 @@ nav button{
 
 .video iframe{
     max-width: clamp(100px,100%,640px);
-    max-height: clam(100px,100%,480px);
+    max-height: clamp(100px,100%,480px);
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px){
@@ -399,4 +399,38 @@ p {
 .github-svg-button:hover {
     color: white;
     background-color: #00c45d;
+}
+
+.profile-card {
+    background: rgb(105,224,162);
+    background: linear-gradient(305deg, rgba(105,224,162,1) 18%, rgba(28,219,119,1) 62%, rgba(56,186,117,1) 98%);
+    border-radius: 16px;
+    color: black !important;
+    min-height: 20vh;
+}
+
+.profile-card svg{
+    margin-left: 8px;
+    margin-right: 8px;
+    height: clamp(32px, 3vh, 128px);
+    width: clamp(32px, 3vh, 128px);
+}
+
+.profile-card svg:hover {
+    color: #1f9eba;
+}
+
+.profile-card-image {
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+    top: 10%;
+}
+
+.profile-card-image img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
