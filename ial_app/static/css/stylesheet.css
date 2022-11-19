@@ -377,6 +377,7 @@ p {
 .about-card {
     background-color: #36363625;
     border-radius: 0px 0px 8px 8px;
+    padding: 8px;
 }
 
 .about-card p {
@@ -384,12 +385,18 @@ p {
     padding-top: 1em;
 }
 
+.github-svg-button {
+    height: 100%;
+    width: 100%;
+    max-height: 5vh;
+    background-color: green;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: #0c2407;
+}
 
-
-.badge-item{
-    /* color:red !important; */
-    /* background-color: white;
-    padding: 10px;
-    border-radius: 50%; */
-    /* min-width: fit-content; */
+.github-svg-button:hover {
+    color: white;
+    background-color: #00c45d;
 }
