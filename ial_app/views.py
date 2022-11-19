@@ -33,3 +33,6 @@ def filter_lessons(topic, lessons):
 
 def filter_exercises(topic, exercises):
     return list(filter(lambda x: x.fk_topic.id == topic.id, exercises))
+
+def about(request):
+    return render(request, 'about.html')
