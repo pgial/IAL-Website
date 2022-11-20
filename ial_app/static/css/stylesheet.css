@@ -406,7 +406,8 @@ p {
     background: linear-gradient(305deg, rgba(105,224,162,1) 18%, rgba(28,219,119,1) 62%, rgba(56,186,117,1) 98%);
     border-radius: 16px;
     color: black !important;
-    min-height: 20vh;
+    min-height: 25vh;
+    max-height: 1000px;
 }
 
 .profile-card svg{
