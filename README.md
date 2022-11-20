@@ -57,13 +57,25 @@ A primeira execução desse comando irá demorar alguns minutos pois irá baixar
 
 ## ▶️ Execução
 
-Basta executar o seguinte comando:
+Você terá que configurar as variáveis de ambiente:
+ - Crie um arquivo `.env`
+   - Preencha as seguintes variáveis
+     - ```shell
+       ELEPHANT_DB_USER=...
+       ELEPHANT_DB_PASSWORD=...
+       ELEPHANT_DB_HOST=...
+       ELEPHANT_DB_PORT=...
+       ELEPHANT_DB_NAME=...
+       ```
+
+
+Após configurar as variáveis de ambiente, basta executar o seguinte comando:
 
 ```
 docker compose up
 ```
 
-Após o carregamento ser completado, a página estará disponível para acesso no endereço `localhost:8000`.
+Após o servidor ser configurado e carregado, a página estará disponível para acesso no endereço `localhost:8000`.
 
 Esse comando é suficiente para executar o projeto.
 
