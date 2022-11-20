@@ -79,15 +79,6 @@ WSGI_APPLICATION = 'ialwebsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-print(os.getenv('ELEPHANT_DB_HOST'))
-print(os.getenv('ELEPHANT_DB_HOST'))
-print(os.getenv('ELEPHANT_DB_HOST'))
-print(os.getenv('ELEPHANT_DB_HOST'))
-print(os.getenv('ELEPHANT_DB_HOST'))
-print(os.getenv('ELEPHANT_DB_HOST'))
-print(os.getenv('ELEPHANT_DB_HOST'))
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
