@@ -7,10 +7,8 @@ COPY requirements.txt /src/
 RUN pip install -r requirements.txt
 COPY . /src/
 
-RUN echo $ELEPHANT_DB_USER
-
 RUN python manage.py migrate
 
 RUN python manage.py loaddata ial_app/fixtures/*
 
-CMD ['python', 'manage.py', 'runserver', '0.0.0.0:8000']
+CMD python manage.py runserver 0.0.0.0:$PORT
