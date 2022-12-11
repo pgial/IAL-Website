@@ -5,3 +5,4 @@ django-embed-video==1.4.4
 python-dotenv>=0.20.0
 ipdb
 gunicorn
+django_heroku
