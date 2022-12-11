@@ -59,6 +59,7 @@ nav button{
     overflow: hidden;
     border-radius: 20px;
     padding: 20px;
+    min-height: clamp(100px, 35vh, 500px);
 
 }
 
@@ -100,6 +101,29 @@ nav button{
     background: #141a17;
     inset: 5px;
     border-radius: 15px;
+}
+
+
+.card-extra:hover {
+    opacity: 0.7;
+}
+
+.card-extra:hover::after {
+    color: white;
+    background-color: black;
+}
+
+.card-extra:hover h2::before {
+    opacity: 1 !important;
+    content: "EM BREVE ";
+}
+
+.card-extra:hover p {
+    display: none;
+}
+
+.card-extra:hover button {
+    display: none;
 }
 
 
