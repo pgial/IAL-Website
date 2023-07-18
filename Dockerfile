@@ -10,5 +10,3 @@ COPY . /src/
 RUN python manage.py migrate
 
 RUN python manage.py loaddata ial_app/fixtures/*
-
-CMD python manage.py runserver 0.0.0.0:$PORT
