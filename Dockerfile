@@ -7,4 +7,4 @@ COPY requirements.txt /src/
 RUN pip install -r requirements.txt
 COPY . /src/
 
-CMD python manage.py migrate && python manage.py loaddata ial_app/fixtures/* && gunicorn ial-website-test.wsgi:application --bind 0.0.0.0:$PORT
+CMD python manage.py migrate && python manage.py loaddata ial_app/fixtures/* && gunicorn ialwebsite.wsgi:application --bind 0.0.0.0:$PORT
